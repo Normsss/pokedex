@@ -1,28 +1,30 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
-</head>
-<body>
-    
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1>Pokedex</h1>
+      <h1>Pokedex</h1>
 
-            <label for="pokemon-select">Choose a Pokémon</label>
-            <select data-js="pokedex" name="pokedex"></select>
-            <button id="btn" onclick="showDetails()" type="submit">
-                <a>Submit</a>
-            </button>
-
+      <label for="pokemon-select">Choose a Pokémon</label>
+      <select
+        data-js="pokedex"
+        name="pokedex"
+        onchange="showDetails(this)"
+      ></select>
     </div>
 
-    <ul class='container' id="demo"> </ul>><!-- lo que aparece al ejecutar el script-->
+    <div class="container" id="demo"></div>
+    <!-- lo que aparece al ejecutar el script-->
 
     <script src="./scripts.js"></script>
-</body>
+  </body>
 </html>
