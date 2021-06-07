@@ -11,14 +11,12 @@
 
 html {
     height: 100%;
-    background: linear-gradient(to top, #D4D3DD, #d6b3e6);
+    background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 }
 
 body {
    padding-bottom:60px;
    font-family: 'Rajdhani', sans-serif;
-	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 	color: white;
 	margin: 0;
 }
@@ -199,7 +197,6 @@ h1 {
 
 /* footer */
 footer {
-    background: #0d253f;
     position: absolute; 
     display: flex;
     bottom: 0;
@@ -209,7 +206,7 @@ footer {
     align-items: center;
     justify-content: space-between; 
     color:  #0d253f;
-    background: linear-gradient(to top, #0d253f, transparent);
+    
 }
 
 #logo > img {
