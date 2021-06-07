@@ -1,14 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+html {
+    height: 100%;
+    background: linear-gradient(to top, #D4D3DD, #d6b3e6);
+}
+
 body {
+   padding-bottom:60px;
+   font-family: 'Rajdhani', sans-serif;
 	background: #EFEFBB;
 	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 	color: white;
 	margin: 0;
-	font-family: rubik;
 }
+
+main {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    margin-top: 8%;    
+}
+
+#btn {
+    background: #35d8a7;
+    background-image: -webkit-linear-gradient(top, #35d8a7, #2980b9);
+    background-image: -moz-linear-gradient(top, #35d8a7, #2980b9);
+    background-image: -ms-linear-gradient(top, #35d8a7, #2980b9);
+    background-image: -o-linear-gradient(top, #35d8a7, #2980b9);
+    background-image: linear-gradient(to bottom, #35d8a7, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
 
 .container {
 	padding: 40px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 h1 {
@@ -146,4 +195,32 @@ h1 {
 	100% {
 			transform: translateY(0);
 	}
+}
+
+/* footer */
+footer {
+    background: #0d253f;
+    position: absolute; 
+    display: flex;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between; 
+    color:  #0d253f;
+    background: linear-gradient(to top, #0d253f, transparent);
+}
+
+#logo > img {
+    width: auto;  
+}
+#logo > p {
+    margin-bottom: 5px;
+}
+#platlab{
+    margin: 10px;
+}
+#platlab > p > a{
+    color:  #0d253f
 }

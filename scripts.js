@@ -4,7 +4,7 @@ const fetchPokemon = () => {
   // (para hacer op asíncronas))
   const getPokemonUrl = (id) => `https://pokeapi.co/api/v2/pokemon/${id}`; //interpolación del id para desplegar todos los pokemones
   const select = document.querySelector(`[data-js="pokedex"]`);
-  const printDetails = document.querySelector("#demo");
+  const printDetails = document.getElementById("demo");
   const pokemons = [];
 
   for (let i = 1; i <= 150; i++) {
@@ -12,7 +12,7 @@ const fetchPokemon = () => {
       .then((response) => response.json())
       .then((pokemon) => {
         pokemons.push(pokemon);
-        select.innerHTML += `<option id="selectedPokemon"  value="${pokemon.id}">${pokemon.id}. ${pokemon.name}</option>`;
+        select.innerHTML += `<option id="selectedPokemon"  value="${pokemon.id}">${pokemon.name}</option>`;
       });
   }
 
@@ -30,7 +30,7 @@ const fetchPokemon = () => {
   };
 
   // //fetch usa la url como parámetro
-  // fetch(url) //en este momento, podemos ver en consola-network cmd+R cómo ya tenemos datos de la api
+  // fetch(url) //en este momento, podemos ver en consola/network cmd+R cómo ya tenemos datos de la api
   // 	.then(response => response.json()) //respuesta de la PROMISE, lo convertimos a JSON
   // 	.then(pokemon => { //segunda respuesta de promise
   // 		console.log(pokemon) //nos enseña los datos del pokemon indicado en URL
